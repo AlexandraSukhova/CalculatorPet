@@ -1,14 +1,14 @@
-import { createRoot } from 'react-dom/client';
 import { StrictMode } from 'react';
 import { App } from './components/app';
+import * as ReactDOMClient from 'react-dom/client';
 
 import './styles/index.scss';
 
-const domNode = document.getElementById('root') as HTMLDivElement;
-const root = createRoot(domNode);
+const container = document.getElementById('root') as HTMLElement;
+const root = ReactDOMClient.createRoot(container!);
 
 root.render(
 	<StrictMode>
-		<App />
+			<App />
 	</StrictMode>
 );
