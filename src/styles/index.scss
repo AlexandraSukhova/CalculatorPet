@@ -1,0 +1,182 @@
+/* Отключаем браузерные дефолтные стили для всех элементов */
+
+html,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+	border: 0;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	font-size: 100%;
+	line-height: 1;
+	vertical-align: baseline;
+	border: 0;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'PressStart2P';
+  src: url('../fonts/font-files/PressStart2P-Regular.woff') format('woff');
+  font-weight: normal;
+  font-display: swap;
+}
+
+
+:root.theme_light {
+	--result-font: 'PressStart2P';
+  --bg-color: #E6E6E6;
+	--operand-button-bg: var(--bg-color);
+	--operator-button-bg: #B8B8B8;
+	--font-operand-color: #6C6C6C;
+	--font-operator-color: #fff;
+	--error-color: #C45F5F;
+	--button-shadow: inset 2px -2px 5px rgba(0, 0, 0, 0.4), inset -2px 2px 7px rgba(255, 255, 255, 0.4);
+	--hover-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.4), inset 2px -2px 7px rgba(255, 255, 255, 0.4);
+}
+
+:root.theme_dark {
+	--result-font: 'PressStart2P';
+  --bg-color: #696969;
+	--operand-button-bg: #7B7B7B;
+	--operator-button-bg: #B8B8B8;
+	--font-operand-color: #323232;
+	--font-operator-color: #fff;
+	--error-color: #CF4242;
+	--button-shadow: inset 2px -2px 5px rgba(0, 0, 0, 0.5), inset -2px 2px 7px rgba(255, 255, 255, 0.4);
+	--hover-shadow: inset -2px 2px 5px rgba(0, 0, 0, 0.5), inset 2px -2px 7px rgba(255, 255, 255, 0.4);
+}
+
+:root.theme_pink {
+	--result-font: 'PressStart2P';
+	--bg-color: #FCE7F0;
+	--operand-button-bg: var(--bg-color);
+	--operator-button-bg: #DCB6B6;
+	--font-operand-color: #C47B7B;
+	--font-operator-color: #fff;
+	--error-color: #910000;
+	--button-shadow: inset 2px -2px 5px rgba(187, 93, 93, 0.5), inset -2px 2px 7px rgba(255, 226, 226, 0.4);
+	--hover-shadow: inset -2px 2px 5px rgba(187, 93, 93, 0.5), inset 2px -2px 7px rgba(255, 226, 226, 0.4);
+}
