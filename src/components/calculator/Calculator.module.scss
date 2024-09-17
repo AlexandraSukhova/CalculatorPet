@@ -1,0 +1,88 @@
+.calculator {
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-areas: 'display display display'
+  'error error error'
+  'operand operand operator'
+  'operand operand operator'
+  'operand operand .'
+  'options result result';
+  max-width: min-content;
+  padding: 20px;
+  min-width: 300px;
+  box-shadow: var(--button-shadow);
+  border-radius: 60px;
+  background: var(--bg-color);
+}
+
+.display {
+  grid-area: display;
+  width: 100%;
+}
+
+.error {
+  grid-area: error;
+  height: 20px;
+  padding: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: var(--error-color);
+}
+
+.operands {
+  width: min-content;
+  grid-area: operand;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  max-width: 200px;
+  width: 100%;
+}
+
+.operators {
+  grid-area: operator;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  width: min-content;
+}
+
+.result_buttons {
+  grid-area: result;
+  width: min-content;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: nowrap;
+  gap: 10px;
+}
+
+.options {
+  grid-area: options;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.pink {
+  background: #FCE7F0;
+  box-shadow: inset 1px -1px 2px rgba(0, 0, 0, 0.2), inset -2px 2px 7px rgba(255, 255, 255, 0.2);
+}
+
+.dark {
+  background: #7B7B7B;
+  box-shadow: inset 1px -1px 2px rgba(0, 0, 0, 0.3), inset -2px 2px 7px rgba(255, 255, 255, 0.2);
+}
+
+.light {
+  background: #E6E6E6;
+  box-shadow: inset 1px -1px 2px rgba(0, 0, 0, 0.2), inset -2px 2px 7px rgba(255, 255, 255, 0.2);
+}

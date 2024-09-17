@@ -1,0 +1,11 @@
+.option {
+  width: 5px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: none;
+}
+
+.option:disabled {
+  background: var(--bg-color);
+  box-shadow: var(--hover-shadow);
+}

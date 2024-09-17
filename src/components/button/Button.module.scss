@@ -1,0 +1,34 @@
+.button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	box-sizing: border-box;
+	text-align: center;
+	height: 50px;
+	box-shadow: var(--button-shadow);
+	cursor: pointer;
+	border: none;
+}
+
+.button-operand {
+	aspect-ratio: 1/1;
+	background: var(--operand-button-bg);
+	border-radius: 50%;
+	color: var(--font-operand-color);
+}
+
+.button-operator {
+	aspect-ratio: 2/1;
+	background: var(--operator-button-bg);
+	border-radius: 70px;
+	color: var(--font-operator-color);
+	font-size: 1.2em;
+}
+
+.button:active {
+	box-shadow: var(--hover-shadow);
+}
+
+.button:hover {
+	box-shadow: var(--hover-shadow);
+}

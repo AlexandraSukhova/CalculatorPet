@@ -1,0 +1,16 @@
+.display {
+display: flex;
+justify-content: flex-start;
+align-items: center;
+box-sizing: border-box;
+padding: 20px;
+text-align: center;
+height: 50px;
+width: 100%;
+border-radius: 70px;
+background: var(operand-button-bg);
+box-shadow: var(--hover-shadow);
+font-family: var(--result-font), Helvetica, sans-serif;
+font-size: 1em;
+color: var(--font-operand-color);
+}
